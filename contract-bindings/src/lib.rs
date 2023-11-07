@@ -4,6 +4,7 @@
 //! Do not manually edit these files.
 //! These files may be overwritten by the codegen system at any time.
 pub mod access_control;
+pub mod balances;
 pub mod context;
 pub mod erc165;
 pub mod i_access_control;
