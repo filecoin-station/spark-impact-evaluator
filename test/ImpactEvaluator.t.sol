@@ -7,8 +7,8 @@ import "../src/ImpactEvaluator.sol";
 contract ImpactEvaluatorTest is Test {
     function test_Constructor() public {
         ImpactEvaluator impactEvaluator = new ImpactEvaluator(address(this));
-        assertEq(impactEvaluator.roundReward(), 0.2739726027 ether);
-        assertEq(impactEvaluator.nextRoundLength(), 120);
+        assertEq(impactEvaluator.nextRoundLength(), 60);
+        assertEq(impactEvaluator.roundReward(), 0.136986301369863013 ether);
     }
 
     function test_AddMeasurements() public {

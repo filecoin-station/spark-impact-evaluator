@@ -13,8 +13,10 @@ contract ImpactEvaluator is Meridian.ImpactEvaluator {
         _grantRole(DEFAULT_ADMIN_ROLE, 0x646ac6F1941CAb0ce3fE1368e9AD30364a9F51dA); // @bajtos
         _grantRole(DEFAULT_ADMIN_ROLE, 0xa0e36151B7074A4F2ec31b741C27E46FcbBE5379); // @patrickwoodhead
         _grantRole(DEFAULT_ADMIN_ROLE, 0x3ee4A552b1a6519A266AEFb0514633F289FF2A9F); // @juliangruber
-        setNextRoundLength(120); // 60 minutes
-        setRoundReward(0.2739726027 ether);
+        // 30 minutes
+        setNextRoundLength(30 * 2);
+        // 200 FIL / month
+        setRoundReward(200 ether / (43800 / nextRoundLength * 2));
         setMaxTransfersPerTx(10);
     }
 
