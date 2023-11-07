@@ -8,10 +8,11 @@ contract ImpactEvaluator is Meridian.ImpactEvaluator {
 
     constructor(address admin) Meridian.ImpactEvaluator(admin) {
         _grantRole(MEASURE_ROLE, admin);
-        _grantRole(MEASURE_ROLE, 0xAf992Fbc0c22BC941A232c63dc1b0c0cD572D145);
-        _grantRole(EVALUATE_ROLE, 0xB0a808b5C49f5Ed7Af9EcAAaF033B2d937692877);
-        setRoundReward(1 ether);
-        setNextRoundLength(60);
+        _grantRole(MEASURE_ROLE, 0x53bDfdEa92f7A60aeF82228926d02878018acB4e);
+        _grantRole(EVALUATE_ROLE, 0x4EcdC893Beb09121E4F5cBba469D33F5fF618442);
+        setNextRoundLength(120); // 60 minutes
+        setRoundReward(0.2739726027 ether);
+        setMaxTransfersPerTx(10);
     }
 
     function addMeasurements(
