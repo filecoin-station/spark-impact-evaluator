@@ -33,7 +33,7 @@ pub mod spark {
         set_tx_gas(
             &mut contract.deployer.tx,
             client.estimate_gas(&tx, None).await?,
-            gas_price,
+            gas_price * 2,
         );
 
         println!(
