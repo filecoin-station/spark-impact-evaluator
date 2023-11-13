@@ -3,6 +3,14 @@
 import "../lib/impact-evaluator/src/ImpactEvaluator.sol";
 pragma solidity ^0.8.19;
 
+// Time constants
+uint constant blockTimeSeconds = 30;
+uint constant minutesInAMonth = 43800;
+
+// Spark settings
+uint constant roundLengthMinutes = 60;
+uint constant monthlyReward = 200 ether;
+
 contract Spark is ImpactEvaluator {
     bytes32 public constant MEASURE_ROLE = keccak256("MEASURE_ROLE");
 
@@ -13,10 +21,12 @@ contract Spark is ImpactEvaluator {
         _grantRole(DEFAULT_ADMIN_ROLE, 0x646ac6F1941CAb0ce3fE1368e9AD30364a9F51dA); // @bajtos
         _grantRole(DEFAULT_ADMIN_ROLE, 0xa0e36151B7074A4F2ec31b741C27E46FcbBE5379); // @patrickwoodhead
         _grantRole(DEFAULT_ADMIN_ROLE, 0x3ee4A552b1a6519A266AEFb0514633F289FF2A9F); // @juliangruber
-        // 30 minutes
-        setNextRoundLength(30 * 2);
-        // 200 FIL / month
-        setRoundReward(200 ether / (43800 / nextRoundLength * 2));
+
+        setNextRoundLength(roundLengthMinutes * (60 / blockTimeSeconds));
+
+        uint roundsInAMonth = minutesInAMonth / roundLengthMinutes;
+        setRoundReward(monthlyReward / roundsInAMonth);
+
         setMaxTransfersPerTx(10);
     }
 
