@@ -8,7 +8,7 @@ contract SparkTest is Test {
     function test_Constructor() public {
         Spark spark = new Spark(address(this));
         assertEq(spark.nextRoundLength(), 120);
-        assertEq(spark.roundReward(), 0.273972602739726027 ether);
+        assertEq(spark.roundReward(), 1.369863013698630136 ether);
     }
 
     function test_AddMeasurements() public {

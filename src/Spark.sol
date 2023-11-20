@@ -9,7 +9,7 @@ uint constant minutesInAMonth = 43800;
 
 // Spark settings
 uint constant roundLengthMinutes = 60;
-uint constant monthlyReward = 200 ether;
+uint constant monthlyReward = 1000 ether;
 
 contract Spark is ImpactEvaluator {
     bytes32 public constant MEASURE_ROLE = keccak256("MEASURE_ROLE");
