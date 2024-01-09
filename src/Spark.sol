@@ -31,7 +31,7 @@ contract Spark is ImpactEvaluator {
     }
 
     function addMeasurements(
-        string memory cid
+        string calldata cid
     ) public override returns (uint) {
         require(hasRole(MEASURE_ROLE, msg.sender), "Not a sensor");
         return super.addMeasurements(cid);
