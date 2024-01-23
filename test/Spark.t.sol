@@ -7,8 +7,8 @@ import "../src/Spark.sol";
 contract SparkTest is Test {
     function test_Constructor() public {
         Spark spark = new Spark(address(this));
-        assertEq(spark.nextRoundLength(), 120);
-        assertEq(spark.roundReward(), 1.369863013698630136 ether);
+        assertEq(spark.nextRoundLength(), 40);
+        assertEq(spark.roundReward(), 0.456621004566210045 ether);
     }
 
     function test_AddMeasurements() public {

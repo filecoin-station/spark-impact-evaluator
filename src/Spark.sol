@@ -8,7 +8,7 @@ uint constant blockTimeSeconds = 30;
 uint constant minutesInAMonth = 43800;
 
 // Spark settings
-uint constant roundLengthMinutes = 60;
+uint constant roundLengthMinutes = 20;
 uint constant monthlyReward = 1000 ether;
 
 contract Spark is ImpactEvaluator {
