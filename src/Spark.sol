@@ -28,6 +28,7 @@ contract Spark is ImpactEvaluator {
         setRoundReward(monthlyReward / roundsInAMonth);
 
         setMaxTransfersPerTx(10);
+        setMinBalanceForTransfer(0.1 ether);
     }
 
     function addMeasurements(
