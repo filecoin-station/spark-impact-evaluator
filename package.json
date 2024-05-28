@@ -6,5 +6,11 @@
   "type": "module",
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "files": [
+    "index.js",
+    "Abi.json",
+    "LICENSE.md",
+    "README.md"
+  ]
 }
