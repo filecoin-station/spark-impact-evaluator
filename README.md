@@ -60,11 +60,11 @@ forge create --rpc-url http://127.0.0.1:8545 --mnemonic "test test test test tes
 ## Node.js API
 
 ```js
-import * as Spark from '@filecoin-station/spark-impact-evaluator'
+import * as SparkImpactEvaluator from '@filecoin-station/spark-impact-evaluator'
 
 console.log({
-  abi: Spark.ABI,
-  address: Spark.ADDRESS
+  abi: SparkImpactEvaluator.ABI,
+  address: SparkImpactEvaluator.ADDRESS
 })
 ```
 
