@@ -57,6 +57,17 @@ To deploy the contract on Anvil, run:
 forge create --rpc-url http://127.0.0.1:8545 --mnemonic "test test test test test test test test test test test junk" src/Spark.sol:Spark --constructor-args 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
 ```
 
+## Node.js API
+
+```js
+import * as SparkImpactEvaluator from '@filecoin-station/spark-impact-evaluator'
+
+console.log({
+  abi: SparkImpactEvaluator.ABI,
+  address: SparkImpactEvaluator.ADDRESS
+})
+```
+
 ## Deployment
 
 Contracts can be deployed using the `forge cli` or using a rust deployment
