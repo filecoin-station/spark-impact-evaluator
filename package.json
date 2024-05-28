@@ -4,6 +4,9 @@
   "version": "0.0.0",
   "repository": "filecoin-station/spark-impact-evaluator",
   "type": "module",
+  "scripts": {
+    "test": "echo No tests"
+  },
   "publishConfig": {
     "access": "public"
   },
