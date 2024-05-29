@@ -5,6 +5,7 @@
   "repository": "filecoin-station/spark-impact-evaluator",
   "type": "module",
   "types": "index.d.ts",
+  "main": "index.js",
   "scripts": {
     "test": "echo No tests"
   },
