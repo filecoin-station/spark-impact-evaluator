@@ -9,7 +9,7 @@
   "scripts": {
     "test": "echo No tests"
   },
-  "bin": "bin/spark-impact-evaluator.js",
+  "bin": "bin.js",
   "publishConfig": {
     "access": "public"
   },
