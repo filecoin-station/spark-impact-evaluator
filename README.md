@@ -68,6 +68,15 @@ console.log({
 })
 ```
 
+## Node.js CLI
+
+The CLI prints the current contract address.
+
+```console
+$ spark-impact-evaluator
+0x8460766edc62b525fc1fa4d628fc79229dc73031
+```
+
 ## Deployment
 
 Contracts can be deployed using the `forge cli` or using a rust deployment
