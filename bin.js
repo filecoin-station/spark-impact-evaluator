@@ -2,4 +2,4 @@
 
 import { ADDRESS } from './index.js'
 
-process.stdout.end(ADDRESS)
+console.log(ADDRESS)
