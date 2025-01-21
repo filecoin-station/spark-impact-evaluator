@@ -133,6 +133,12 @@ To deploy, run:
 (cd contract-utils && cargo run)
 ```
 
+## Publish Node.js module
+
+```console
+npm run release
+```
+
 ## Tests
 
 #### Integration Tests
