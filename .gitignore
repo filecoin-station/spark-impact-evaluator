@@ -6,3 +6,5 @@ out
 
 ## Rust Target Files
 **/**/target
+
+node_modules
