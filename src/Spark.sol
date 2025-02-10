@@ -21,6 +21,7 @@ contract Spark is ImpactEvaluator {
         _grantRole(DEFAULT_ADMIN_ROLE, 0x646ac6F1941CAb0ce3fE1368e9AD30364a9F51dA); // @bajtos
         _grantRole(DEFAULT_ADMIN_ROLE, 0xa0e36151B7074A4F2ec31b741C27E46FcbBE5379); // @patrickwoodhead
         _grantRole(DEFAULT_ADMIN_ROLE, 0x3ee4A552b1a6519A266AEFb0514633F289FF2A9F); // @juliangruber
+        _grantRole(DEFAULT_ADMIN_ROLE, 0x922F6f9dBf2e4445ce778EA2BD970A7644f94668); // @pyropy
 
         setNextRoundLength(roundLengthMinutes * (60 / blockTimeSeconds));
 
